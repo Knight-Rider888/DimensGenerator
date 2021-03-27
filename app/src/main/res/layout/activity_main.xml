@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="生成 values-sw?dp 文件"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:lineSpacingExtra="5dp"
+        android:text="目前支持： \n1.360dp（荣耀play4pro、vivo x20、魅族16p）\n2.375dp（一般为设计图尺寸）\n3.392dp（mi10,mi8）\n4.411dp（oppo findX2，三星s8 ）\n5.640dp（华为 matePad pro）\n6.768dp（mi pad2）"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="50dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入设计图宽度的dp值（一般为375dp）"
+        android:inputType="number"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:text="生成" />
+
+</LinearLayout>
